@@ -1,5 +1,4 @@
-# Calculate the user's total holiday cost
-
+# Program calculates the user's total holiday cost
 username = input("Please enter your name:")
 print(f"Welcome {username}, this program will calculate your total holiday cost.")
 
@@ -7,9 +6,6 @@ flight_choice = (input("Please select the city that you would like to visit by t
 num_nights = int(input("Please enter a number for how many nights are you planning to stay at the hotel:\n"))
 rental_days = int(input("Please enter a number for how many days you will be hiring a car:\n"))
 
-
-
-# Function calculates total price for the nights spent at the hotel
 def hotel_cost (nights):
     '''
     Calculates the total cost spent at the hotel
@@ -21,7 +17,6 @@ def hotel_cost (nights):
 
     return nights * 250
 
-# Returns price per flight per destination
 def plane_cost (selected_city):
     '''
     Calculates the price per flight
@@ -40,7 +35,6 @@ def plane_cost (selected_city):
     else:
         print("The option you have entered is invalid:")
 
-# Function calculates total price for the car rental
 def car_rental (days_with_car):
     '''
     Calculates the cost for the car rental
@@ -52,7 +46,6 @@ def car_rental (days_with_car):
 
     return days_with_car * 70
 
-# Function calculates the total holiday cost
 def holiday_cost( flight_choice, num_nights, rental_days):
     '''
     Calculates total holiday cost
@@ -67,4 +60,3 @@ print(f"The total holiday cost is {holiday_cost(flight_choice,num_nights,rental_
 print(f"Where the cost flight is {plane_cost(flight_choice)}.")
 print(f"The hotel cost being {hotel_cost(num_nights)}.")
 print(f"And the car rental is {car_rental(rental_days)}.")
-
