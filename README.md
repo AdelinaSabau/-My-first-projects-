@@ -1,2 +1,2 @@
 # -My-first-projects-
-My very first projects withins the Skills Bootcamp at HyperionDev
+My very first projects within the Skills Bootcamp at HyperionDev
